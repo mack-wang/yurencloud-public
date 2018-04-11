@@ -1,0 +1,161 @@
+@import "../assets/css/variable";
+
+.articleRow{
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.articleRow:hover{
+  background: #f9f9f9;
+}
+
+.articleCol{
+  font-weight: bold;
+  font-size: $big;
+}
+
+.header{
+  background-color: #fff;
+  text-align: center;
+  color:#333;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.content{
+  background-color: #fff;
+}
+
+.content>div{
+  margin: 0 auto;
+  width: 800px;
+  &:nth-child(1){
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer{
+  background-color: #fff;
+  text-align: center;
+}
+
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.detail{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.detail>div:first-child{
+  font-size: 16px;
+}
+
+.detail>div:last-child>span{
+  padding-right: 8px;
+  color:$light-text;
+}
+
+.button{
+  width: 110px;
+  height: 40px;
+  background: $danger;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  color:#fff;
+  font-size: $large;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  transition:backgrand-color .4s;
+  position: relative;
+  div {
+    display: none;
+    position: absolute;
+    top: -340px;
+    left: -80px;
+    width: 280px;
+    height: 320px;
+    background: #fff;
+    border-radius: 4px;
+    background-image: url("../assets/qrcode.png");
+    background-size: cover;
+    box-shadow: $box-shadow;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      left: 130px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #fff;
+    }
+  }
+  &:hover {
+    background-color: darken($danger,5);
+    div {
+      display: block;
+    }
+  }
+}
+
+.back{
+  display: inline-block;
+  color:$light-text;
+  transition:color .4s;
+  &:hover{
+    color:$text;
+  }
+}
+
+.image{
+  width: 160px;
+  height: 140px;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+.icons>span{
+  color:$light-text;
+  padding-right: 10px;
+  span{
+    padding-left: 4px;
+  }
+}
+
+.articleBrief{
+  font-size: $large;
+  line-height: 24px;
+  color:$light-text;
+}
+
+.article{
+  padding: 0 30px;
+}
+
+.date{
+  line-height: 120px;
+}
+
+.heart{
+  margin: 0 auto;
+  color:$light-text;
+  cursor: pointer;
+  transition: color .4s;
+}
+
+.like{
+  margin: 0 auto;
+  color:$danger;
+  cursor: pointer;
+  transition: color .4s;
+}

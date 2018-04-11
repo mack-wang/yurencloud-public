@@ -1,0 +1,12 @@
+
+.antDivider {
+  margin: 0 6px;
+  display: inline-block;
+  height: 8px;
+  width: 1px;
+  background: #ccc;
+}
+
+.inlineElement {
+  margin: 0 14px 14px 0;
+}

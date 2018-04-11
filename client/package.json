@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "roadhog server",
+    "build": "roadhog build",
+    "lint": "eslint --ext .js src test"
+  },
+  "engines": {
+    "install-node": "6.11.1"
+  },
+  "dependencies": {
+    "antd": "^3.0.1",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-runtime": "^6.9.2",
+    "dateformat": "^3.0.2",
+    "draft-convert": "^2.0.1",
+    "draft-js": "^0.10.4",
+    "draft-js-import-html": "^1.2.1",
+    "draftjs-to-html": "^0.8.1",
+    "dva": "^2.1.0",
+    "dva-loading": "^1.0.4",
+    "dva-model-extend": "^0.1.2",
+    "html-to-draftjs": "^1.1.1",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.20.1",
+    "qs": "^6.5.1",
+    "react": "^16.2.0",
+    "react-declarative-head": "^1.0.5",
+    "react-dom": "^16.2.0",
+    "react-draft-wysiwyg": "^1.12.0",
+    "react-highlight": "^0.10.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "wysiwyg.css": "^0.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "expect": "^1.20.2",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-devtools-log-monitor": "^1.4.0",
+    "roadhog": "^1.2.1"
+  }
+}

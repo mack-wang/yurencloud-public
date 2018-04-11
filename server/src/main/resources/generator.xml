@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+    <context id="dev">
+
+        <!--自动实现Serializable接口-->
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
+
+        <!-- 去除自动生成的注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <!--数据库基本信息-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3307/yurencloud?autoReconnect=true&amp;autoReconnectForPools=true&amp;useSSL=false"
+                        userId="root"
+                        password="secret">
+        </jdbcConnection>
+
+        <!--生成实体类的位置以及包的名字-->
+        <javaModelGenerator targetPackage="com.yurencloud.model"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <!-- 是否针对string类型的字段在set的时候进行trim调用 -->
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!--Mapper的xml格式自动生成-->
+        <sqlMapGenerator targetPackage="com.yurencloud" targetProject="src/main/resources" />
+
+
+        <!--Mapper自动生成-->
+        <javaClientGenerator targetPackage="com.yurencloud.mapper"
+                             targetProject="src/main/java" type="XMLMAPPER" />
+
+        <!--对应的表名，以及实体名-->
+        <!--注意，如果不想被覆盖掉，请在生成之后立即注释掉-->
+
+        <!--<table tableName="account" domainObjectName="Account" ></table>-->
+        <!--<table tableName="role" domainObjectName="Role" ></table>-->
+        <!--<table tableName="user_role" domainObjectName="UserRole" ></table>-->
+        <!--因为user是特殊的表，带有安全设置，所以在无改动的时候-->
+        <!--<table tableName="user" domainObjectName="User" ></table>-->
+
+    </context>
+
+</generatorConfiguration>

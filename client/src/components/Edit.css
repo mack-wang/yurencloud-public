@@ -1,0 +1,9 @@
+
+.wrapperClassName {
+  height: 500px;
+  border: 1px solid #eee;
+  overflow:auto;
+  margin-bottom: 20px;
+  margin-top: -7px;
+  padding:14px;
+}
