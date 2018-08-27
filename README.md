@@ -2,7 +2,7 @@
 
 项目运行成功示例： [愚人云端博客](http://blog.yurencloud.com)
 
-更多开源项目，请查看：[愚人云端博客](http://www.yurencloud.com)
+更多开源项目，请查看：[愚人云端官网](http://www.yurencloud.com)
 
 ## 一、server 为 java/springboot/mybatis/jwt 博客后端
 后端服务器要开启后，前端才能正常使用  
